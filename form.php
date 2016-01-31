@@ -3,7 +3,9 @@
     <title>BHS PHP experiment</title>
   </head>
   <body>
+    <!--
     <?php
+    /*
       //so errors don't show up giving away information
       error_reporting(0);
       require 'db/connect.php';
@@ -50,16 +52,18 @@
     ?>
 
     <div>A list of quartets</div>
-    <div><?php
+    <?php
       foreach($quartets as $quartet){
         echo "<li>$quartet</li>";
       }
-    ?></div>
-
-    Hi <span style="color:green"><?php echo $_POST['name']; ?></span>.
+      */
+    ?>
+-->
 
     <form action="play.php" method="post">
-      Name:  <input type="text" name="name" /><br>
+      First Name:  <input type="text" name="first_name" /><br>
+      Last Name:  <input type="text" name="last_name" /><br>
+      Bio:  <input type="text" name="bio" /><br>
       <input type="submit" name="submit" value="Submit" />
     </form>
 
